@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "MontserratThin";
+  src: url("../font/Montserrat-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "InterRegular";
+  src: url("../font/Inter-Regular.ttf") format("truetype");
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s all ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "InterRegular", sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "MontserratThin", sans-serif;
+}
+
+.nav {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 85px;
+  z-index: 120;
+  padding: 20px 0;
+}
+
+.header {
+  position: relative;
+  background-image: url("../images/header.webp");
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+}
+
+.header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo img {
+  max-width: 140px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  color: #ebe8e8;
+  text-transform: capitalize;
+  font-family: "InterRegular", sans-serif;
+}
+
+.menu a:hover {
+  color: #d12c22;
+}
+
+h1 {
+  font-family: "MontserratThin", sans-serif;
+  color: #ebe8e8;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* cursor piscando */
+.cursor::after {
+  content: "|";
+  animation: blink 0.8s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.h1-subtitle {
+  font-family: "MontserratThin", sans-serif;
+  color: #ebe8e8;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.title-area {
+  position: relative;
+  z-index: 115;
+  position: absolute;
+  text-align: center;
+  width: 650px;
+  transform: translate(-50%, -35%);
+  left: 50%;
+  top: 50%;
+}
+
+.nav-btn {
+  position: relative;
+  font-family: "MontserratThin", sans-serif;
+  border: 1px solid #ebe8e8;
+  color: #ebe8e8;
+  width: 140px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ebe8e8;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.nav-btn:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-btn:hover {
+  color: #d12c22;
+  transform: scale(1.05);
+}
+
+.nav-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.title-btn {
+  border: 1px solid #d12c22;
+  color: #ebe8e8;
+  border-radius: 50px;
+  width: 125px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: transparent;
+  margin: 25px auto 0 auto;
+  font-family: "MontserratThin", sans-serif;
+  transition: 0.5s;
+}
+
+.title-btn:hover {
+  color: #d12c22;
+  background-color: #ebe8e8;
+  border: 1px solid #ebe8e8;
+  transform: scale(105%);
+}
+
+.about {
+  height: auto;
+}
+
+.about .background {
+  background-color: #ebe8e8;
+  padding: 60px 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.about .image {
+  width: 330px;
+  height: 100%;
+  background-image: url("../images/estilista.webp");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.about .text {
+  padding-right: 400px;
+  color: #4f4f4f;
+  position: relative;
+  font-size: 18px;
+}
+
+.about .text h2 {
+  color: #101010;
+}
+
+.about .text .btn {
+  border: 1px solid #4f4f4f;
+  height: 40px;
+  width: 120px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "MontserratThin", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+  right: 0;
+}
+
+.about .text .btn:hover {
+  background-color: #d12c22;
+  border: 1px solid #d12c22;
+  color: #ebe8e8;
+}
+
+.about .text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about .text p {
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.method {
+  background-image: url("../images/method.webp");
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  position: relative;
+  padding: 70px 0;
+}
+
+.method::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(99, 89, 89, 0.9);
+}
+
+.method .container {
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+}
+
+.circle-area .circle {
+  background-color: #d12c22;
+  border: 2px solid #ebe8e8;
+  color: #ebe8e8;
+  width: 350px;
+  height: 350px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
