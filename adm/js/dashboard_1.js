@@ -251,14 +251,14 @@
   var options = {
     series: [
       {
-        name: "Network",
+        name: "Visitas",
         data: [
           {
             x: "Jan",
             y: 350,
           },
           {
-            x: "Feb",
+            x: "Fev",
             y: 600,
           },
           {
@@ -266,11 +266,11 @@
             y: 350,
           },
           {
-            x: "Apr",
+            x: "Abr",
             y: 410,
           },
           {
-            x: "May",
+            x: "Mai",
             y: 410,
           },
           {
@@ -282,15 +282,15 @@
             y: 500,
           },
           {
-            x: "Aug",
+            x: "Ago",
             y: 500,
           },
           {
-            x: "Sep",
+            x: "Set",
             y: 800,
           },
           {
-            x: "Oct",
+            x: "Out",
             y: 410,
           },
           {
@@ -298,7 +298,7 @@
             y: 350,
           },
           {
-            x: "Dec",
+            x: "Dez",
             y: 410,
           },
         ],

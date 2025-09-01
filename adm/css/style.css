@@ -12367,7 +12367,7 @@ fieldset:disabled .btn {
   --scrollbar-color: #aeaeae;
   --light-border: #dceee6;
   --theme-default: #187ccf;
-    --color-theme-transparent: #187ccf33;
+  --color-theme-transparent: #187ccf33;
   --theme-secondary: #f39159;
   --body-color: #f9f7f6;
   --primary-color: #308e87;
@@ -55552,24 +55552,27 @@ label {
   transition: background 0.5s ease;
 }
 .setting-sidebar .customizer-body .color-body .color-img .color-btn {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.35s ease;
+  display: block !important;
 }
 .setting-sidebar .customizer-body .color-body .color-img .color-btn a {
-  padding: 3px 6px;
   text-align: center;
-  color: var(--white);
+  color: var(--bs-gray-dark);
   font-size: 12px;
-  border: solid 2px var(--white);
   z-index: 1;
+  height: 100%;
+  display: block !important;
+  width: 100%;
 }
 .setting-sidebar
   .customizer-body
@@ -55745,7 +55748,7 @@ label {
   ul
   .color-layout[data-attr="color-6"]
   div {
-  background-color: #0c356a;
+  background-color: #4f558f;
 }
 .setting-sidebar .customizer-footer {
   padding: 10px 20px;

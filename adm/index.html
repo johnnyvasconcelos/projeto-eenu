@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Painel Admin</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <meta name="robots" content="noindex, nofollow, noimageindex, nosnippet" />
+    <meta name="googlebot" content="noindex, nofollow" />
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -104,12 +106,6 @@
             <ul class="header-right">
               <li class="custom-dropdown">
                 <div class="translate_wrapper">
-                  <div class="current_lang">
-                    <a class="lang" href="javascript:void(0)"
-                      ><i class="flag-icon flag-icon-us"></i>
-                      <h6 class="lang-txt f-w-700">ENG</h6></a
-                    >
-                  </div>
                   <ul
                     class="custom-menu profile-menu language-menu py-0 more_lang"
                   >
@@ -146,13 +142,7 @@
                     <use href="images/iconly-sprite.svg#moondark"></use></svg
                 ></a>
               </li>
-              <li class="custom-dropdown">
-                <a href="javascript:void(0)">
-                  <svg>
-                    <use
-                      href="images/iconly-sprite.svg#cart-icon"
-                    ></use></svg></a
-                ><span class="badge rounded-pill badge-primary">2</span>
+              <li class="custom-dropdown" style="display: none">
                 <div class="custom-menu cart-dropdown py-0 overflow-hidden">
                   <h3 class="title dropdown-title">Cart</h3>
                   <ul class="pb-0">
@@ -280,7 +270,7 @@
                   class="custom-menu notification-dropdown py-0 overflow-hidden"
                 >
                   <h3 class="title bg-primary-light dropdown-title">
-                    Notification <span class="font-primary">View all</span>
+                    Notificações <span class="font-primary"></span>
                   </h3>
                   <ul class="activity-timeline">
                     <li class="d-flex align-items-start">
@@ -288,7 +278,7 @@
                       <div class="activity-dot-primary"></div>
                       <div class="flex-grow-1">
                         <h6 class="f-w-600 font-primary">
-                          30-04-2024<span>Today</span
+                          03-09-2025<span>Hoje</span
                           ><span class="circle-dot-primary float-end">
                             <svg class="circle-color">
                               <use
@@ -296,10 +286,10 @@
                               ></use></svg
                           ></span>
                         </h6>
-                        <h5>Alice Goodwin</h5>
+                        <h5>Roberto Ciqueira</h5>
                         <p class="mb-0">
-                          Fashion should be fun. It shouldn't be labelled
-                          intellectual.
+                          Pagamento do aluguel (R$ 2300,00) realizado via
+                          transferência.
                         </p>
                       </div>
                     </li>
@@ -307,7 +297,7 @@
                       <div class="activity-dot-secondary"></div>
                       <div class="flex-grow-1">
                         <h6 class="f-w-600 font-secondary">
-                          28-06-2024<span>1 hour ago</span
+                          02-09-2025<span>Ontem</span
                           ><span class="float-end circle-dot-secondary">
                             <svg class="circle-color">
                               <use
@@ -315,9 +305,10 @@
                               ></use></svg
                           ></span>
                         </h6>
-                        <h5>Herry Venter</h5>
+                        <h5>Vincenzo Silva</h5>
                         <p>
-                          I am convinced that there can be luxury in simplicity.
+                          Pagamento do estacionamento (R$ 750,00) realizado via
+                          PIX.
                         </p>
                       </div>
                     </li>
@@ -325,7 +316,7 @@
                       <div class="activity-dot-primary"></div>
                       <div class="flex-grow-1">
                         <h6 class="f-w-600 font-primary">
-                          04-08-2024<span>Today</span
+                          02-09-2025<span>Ontem</span
                           ><span class="float-end circle-dot-primary">
                             <svg class="circle-color">
                               <use
@@ -333,9 +324,12 @@
                               ></use></svg
                           ></span>
                         </h6>
-                        <h5>Loain Deo</h5>
+                        <h5>Leonardo Faria</h5>
                         <p>
-                          I feel that things happen for open new opportunities.
+                          Nova empresa cadastrada:
+                          <a href="../studio-prisma/index.html" target="_blank"
+                            >Studio Prisma</a
+                          >.
                         </p>
                       </div>
                     </li>
@@ -343,7 +337,7 @@
                       <div class="activity-dot-secondary"></div>
                       <div class="flex-grow-1">
                         <h6 class="f-w-600 font-secondary">
-                          12-11-2024<span>Yesterday</span
+                          28-08-2025<span>Quinta-Feira</span
                           ><span class="float-end circle-dot-secondary">
                             <svg class="circle-color">
                               <use
@@ -351,22 +345,20 @@
                               ></use></svg
                           ></span>
                         </h6>
-                        <h5>Fenter Jessy</h5>
-                        <p>
-                          Sometimes the simplest things are the most profound.
-                        </p>
+                        <h5>Maria Lima</h5>
+                        <p>Solicitação de manutenção (elevador, iluminação).</p>
                       </div>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li>
+              <li style="display: none">
                 <a class="full-screen" href="javascript:void(0)">
                   <svg>
                     <use href="images/iconly-sprite.svg#scanfull"></use></svg
                 ></a>
               </li>
-              <li class="custom-dropdown">
+              <li class="custom-dropdown" style="display: none">
                 <a href="javascript:void(0)">
                   <svg>
                     <use href="images/iconly-sprite.svg#bookmark"></use></svg
@@ -488,12 +480,12 @@
               <li class="profile-nav custom-dropdown">
                 <div class="user-wrap">
                   <div class="user-img">
-                    <img src="images/profile.png" alt="user" />
+                    <img src="images/_user.jpg" alt="user" />
                   </div>
                   <div class="user-content">
                     <h6>Christian</h6>
                     <p class="mb-0">
-                      Admin<i class="fa-solid fa-chevron-down"></i>
+                      Gestão<i class="fa-solid fa-chevron-down"></i>
                     </p>
                   </div>
                 </div>
@@ -502,24 +494,22 @@
                     <li class="d-flex">
                       <svg class="svg-color">
                         <use href="images/iconly-sprite.svg#Profile"></use></svg
-                      ><a class="ms-2" href="user-profile.html">Account</a>
+                      ><a class="ms-2" href="sua-conta.html">Conta</a>
                     </li>
                     <li class="d-flex">
                       <svg class="svg-color">
                         <use href="images/iconly-sprite.svg#Message"></use></svg
-                      ><a class="ms-2" href="letter-box.html">Inbox</a>
+                      ><a class="ms-2" href="mensagens.html">Mensagens</a>
                     </li>
                     <li class="d-flex">
                       <svg class="svg-color">
-                        <use
-                          href="images/iconly-sprite.svg#Document"
-                        ></use></svg
-                      ><a class="ms-2" href="to-do.html">Task</a>
+                        <use href="images/iconly-sprite.svg#Edit"></use></svg
+                      ><a class="ms-2" href="reservas.html">Reuniões</a>
                     </li>
                     <li class="d-flex">
                       <svg class="svg-color">
                         <use href="images/iconly-sprite.svg#Login"></use></svg
-                      ><a class="ms-2" href="login.html">Log Out</a>
+                      ><a class="ms-2" href="#">Sair</a>
                     </li>
                   </ul>
                 </div>
@@ -544,7 +534,7 @@
               </li>
               <li class="sidebar-main-title">
                 <div>
-                  <h5 class="lan-1 f-w-700 sidebar-title">Visão Geral</h5>
+                  <h5 class="f-w-700 sidebar-title">Visão Geral</h5>
                 </div>
               </li>
               <li class="sidebar-list active">
@@ -563,7 +553,7 @@
                   <svg class="stroke-icon">
                     <use href="images/iconly-sprite.svg#Document"></use>
                   </svg>
-                  <h6 class="lan-2">Editar Página</h6>
+                  <h6>Editar Site</h6>
                 </a>
               </li>
               <li class="sidebar-list">
@@ -572,7 +562,7 @@
                   <svg class="stroke-icon">
                     <use href="images/iconly-sprite.svg#Wallet"></use>
                   </svg>
-                  <h6 class="lan-3">Financeiro</h6>
+                  <h6>Financeiro</h6>
                   <i class="iconly-Arrow-Right-2 icli"> </i
                 ></a>
                 <ul class="sidebar-submenu">
@@ -587,7 +577,7 @@
               </li>
               <li class="sidebar-main-title">
                 <div>
-                  <h5 class="f-w-700 sidebar-title pt-3">Sistema</h5>
+                  <h5 class="sidebar-title pt-3">Sistema</h5>
                 </div>
               </li>
               <li class="sidebar-list">
@@ -596,7 +586,7 @@
                   <svg class="stroke-icon">
                     <use href="images/iconly-sprite.svg#Edit"></use>
                   </svg>
-                  <h6 class="f-w-600">Reservas</h6>
+                  <h6>Reservas</h6>
                 </a>
               </li>
               <li class="sidebar-list">
@@ -643,6 +633,15 @@
                   </svg>
                   <h6 class="f-w-600">Atendimento</h6></a
                 >
+              </li>
+              <li class="sidebar-list">
+                <i class="fa-solid fa-thumbtack"></i
+                ><a class="sidebar-link" href="./relatorios.html">
+                  <svg class="stroke-icon">
+                    <use href="images/iconly-sprite.svg#Chart"></use>
+                  </svg>
+                  <h6 class="f-w-600">Relatórios</h6>
+                </a>
               </li>
             </ul>
           </div>
@@ -711,9 +710,7 @@
                   </div>
                   <div class="card-body">
                     <div class="d-flex align-center">
-                      <h1>
-                        Studio Prisma <img src="images/hand.png" alt="" />
-                      </h1>
+                      <h1>EENU <img src="images/hand.png" alt="" /></h1>
                     </div>
                     <p>Próxima reunião agendada para hoje!</p>
                     <div class="d-flex align-center justify-content-between">
@@ -792,7 +789,7 @@
                         <thead>
                           <tr>
                             <th>Horário</th>
-                            <th>Trabalho</th>
+                            <th>Motivo</th>
                             <th>Sala</th>
                             <th class="text-center">Responsável</th>
                           </tr>
@@ -808,7 +805,7 @@
                                   <img src="images/1.png" alt="" />
                                 </div>
                                 <div class="flex-grow-1">
-                                  <h6>Michele Farias</h6>
+                                  <h6>Maria Lima</h6>
                                 </div>
                               </div>
                             </td>
@@ -823,7 +820,7 @@
                                   <img src="images/2_1.png" alt="" />
                                 </div>
                                 <div class="flex-grow-1">
-                                  <h6>Reinaldo A.</h6>
+                                  <h6>Caroline Ananias</h6>
                                 </div>
                               </div>
                             </td>
@@ -838,7 +835,7 @@
                                   <img src="images/3_1.png" alt="" />
                                 </div>
                                 <div class="flex-grow-1">
-                                  <h6>Vicenzo M.</h6>
+                                  <h6>Vincenzo Silva</h6>
                                 </div>
                               </div>
                             </td>
@@ -867,7 +864,7 @@
                             <th>Código</th>
                             <th>Tipo</th>
                             <th>Data/Hora</th>
-                            <th class="text-center">Status</th>
+                            <th class="text-center">Estatus</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -1110,9 +1107,9 @@
                           class="dropdown-menu dropdown-menu-end"
                           aria-labelledby="userdropdown4"
                         >
-                          <a class="dropdown-item" href="#">Weekly</a
-                          ><a class="dropdown-item" href="#">Monthly</a
-                          ><a class="dropdown-item" href="#">Yearly</a>
+                          <a class="dropdown-item" href="#">Semanal</a
+                          ><a class="dropdown-item" href="#">Mensal</a
+                          ><a class="dropdown-item" href="#">Anual</a>
                         </div>
                       </div>
                     </div>
@@ -1210,9 +1207,9 @@
                           class="dropdown-menu dropdown-menu-end"
                           aria-labelledby="userdropdown6"
                         >
-                          <a class="dropdown-item" href="#">Weekly</a
-                          ><a class="dropdown-item" href="#">Monthly</a
-                          ><a class="dropdown-item" href="#">Yearly</a>
+                          <a class="dropdown-item" href="#">Semanal</a
+                          ><a class="dropdown-item" href="#">Mensal</a
+                          ><a class="dropdown-item" href="#">Anual</a>
                         </div>
                       </div>
                     </div>
@@ -1331,7 +1328,7 @@
                 <div class="card growthcard">
                   <div class="card-header card-no-border pb-0">
                     <div class="header-top">
-                      <h3>Monthly Revenue Growth</h3>
+                      <h3>Número de Visitas do Site</h3>
                       <ul
                         class="simple-wrapper nav nav-pills"
                         id="myTab"
@@ -1345,7 +1342,7 @@
                             href="#yearly"
                             role="tab"
                             aria-selected="true"
-                            >Yearly</a
+                            >Anual</a
                           >
                         </li>
                         <li class="nav-item">
@@ -1356,7 +1353,7 @@
                             href="#monthly"
                             role="tab"
                             aria-selected="false"
-                            >Monthly</a
+                            >Mensal</a
                           >
                         </li>
                         <li class="nav-item">
@@ -1367,7 +1364,7 @@
                             href="#weekly"
                             role="tab"
                             aria-selected="false"
-                            >Weekly</a
+                            >Semanal</a
                           >
                         </li>
                       </ul>
@@ -1382,7 +1379,7 @@
                 <div class="card height-equal">
                   <div class="card-header card-no-border pb-0">
                     <div class="header-top">
-                      <h3>News & Update</h3>
+                      <h3>Postagens Recentes</h3>
                       <div class="dropdown icon-dropdown">
                         <button
                           class="btn"
@@ -1397,9 +1394,9 @@
                           class="dropdown-menu dropdown-menu-end"
                           aria-labelledby="userdropdown8"
                         >
-                          <a class="dropdown-item" href="#">Weekly</a
-                          ><a class="dropdown-item" href="#">Monthly</a
-                          ><a class="dropdown-item" href="#">Yearly</a>
+                          <a class="dropdown-item" href="#">Semanal</a
+                          ><a class="dropdown-item" href="#">Mensal</a
+                          ><a class="dropdown-item" href="#">Anual</a>
                         </div>
                       </div>
                     </div>
@@ -1408,382 +1405,135 @@
                     <ul>
                       <li class="d-flex gap-2">
                         <div class="flex-shrink-0">
-                          <img class="img-fluid" src="images/1_3.png" alt="" />
+                          <img
+                            class="img-fluid"
+                            src="images/_capa-7.jpg"
+                            alt=""
+                            style="width: 47px; border-radius: 4px"
+                          />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="private-chat.html">
-                            <h6>Google project apply reviwe</h6></a
+                          <a href="#">
+                            <h6>
+                              Parceria com startup de mobilidade sustentável
+                            </h6></a
                           >
-                          <p class="text-truncate">
-                            Today’s news headlines,Breaking...
-                          </p>
+                          <p class="text-truncate">EENU</p>
                         </div>
-                        <span>2 hours</span>
+                        <span>30/08</span>
                       </li>
                       <li class="d-flex gap-2">
                         <div class="flex-shrink-0">
-                          <img class="img-fluid" src="images/2_3.png" alt="" />
+                          <img
+                            class="img-fluid"
+                            src="images/_capa-2.jpg"
+                            alt=""
+                            style="width: 47px; border-radius: 4px"
+                          />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="private-chat.html">
-                            <h6>Business logo create</h6></a
+                          <a href="#">
+                            <h6>Implantação de painéis solares</h6></a
                           >
-                          <p class="text-truncate">
-                            check out the latest news from...
-                          </p>
+                          <p class="text-truncate">EENU</p>
                         </div>
-                        <span>4 hours</span>
+                        <span>25/08</span>
                       </li>
                       <li class="d-flex gap-2">
                         <div class="flex-shrink-0">
-                          <img class="img-fluid" src="images/3_2.png" alt="" />
+                          <img
+                            class="img-fluid"
+                            src="images/_capa-6.jpg"
+                            alt=""
+                            style="width: 47px; border-radius: 4px"
+                          />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="private-chat.html">
-                            <h6>Business project research</h6></a
+                          <a href="#">
+                            <h6>Entrega do Projeto Rio Verde concluída</h6></a
                           >
-                          <p class="text-truncate">
-                            News in english: get all Breaking...
-                          </p>
+                          <p class="text-truncate">Beta Solutions</p>
                         </div>
-                        <span>6 hours</span>
+                        <span>20/08</span>
                       </li>
                       <li class="d-flex gap-2">
                         <div class="flex-shrink-0">
-                          <img class="img-fluid" src="images/4_1.png" alt="" />
+                          <img
+                            class="img-fluid"
+                            src="images/_capa-1.jpg"
+                            alt=""
+                            style="width: 47px; border-radius: 4px"
+                          />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="private-chat.html">
-                            <h6>Recruitment in it Department</h6></a
+                          <a href="#">
+                            <h6>
+                              Atualização no portfólio de serviços digitais
+                            </h6></a
                           >
-                          <p class="text-truncate">
-                            Technology and indian business
-                          </p>
+                          <p class="text-truncate">Epsilon Ltda</p>
                         </div>
-                        <span>8 hours</span>
+                        <span>14/08</span>
                       </li>
                       <li class="d-flex gap-2">
                         <div class="flex-shrink-0">
-                          <img class="img-fluid" src="images/5_1.png" alt="" />
+                          <img
+                            class="img-fluid"
+                            src="images/_capa-5.jpg"
+                            alt=""
+                            style="width: 47px; border-radius: 4px"
+                          />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="private-chat.html">
-                            <h6>Business project research</h6></a
+                          <a href="#">
+                            <h6>
+                              Motivos para Digitalizar Memórias Analógicas
+                            </h6></a
                           >
-                          <p class="text-truncate">
-                            Contributions private repositories
-                          </p>
+                          <p class="text-truncate">Grupo Time Stop</p>
                         </div>
-                        <span>1 hours</span>
+                        <span>19/07</span>
                       </li>
                       <li class="d-flex gap-2">
                         <div class="flex-shrink-0">
-                          <img class="img-fluid" src="images/6_1.png" alt="" />
+                          <img
+                            class="img-fluid"
+                            src="images/_capa-3.jpg"
+                            alt=""
+                            style="width: 47px; border-radius: 4px"
+                            alt=""
+                          />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="private-chat.html">
-                            <h6>Submit riverfront project</h6></a
+                          <a href="#">
+                            <h6>
+                              Coleção de verão apresentada em desfile exclusivo
+                            </h6></a
                           >
-                          <p class="text-truncate">
-                            check out the latest news from...
-                          </p>
+                          <p class="text-truncate">Studio Prisma</p>
                         </div>
-                        <span>3 hours</span>
+                        <span>16/07</span>
                       </li>
                       <li class="d-flex gap-2">
                         <div class="flex-shrink-0">
-                          <img class="img-fluid" src="images/7.png" alt="" />
+                          <img
+                            class="img-fluid"
+                            src="images/_capa-4.jpg"
+                            alt=""
+                            style="width: 47px; border-radius: 4px"
+                          />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="private-chat.html">
-                            <h6>Added new work</h6></a
+                          <a href="#">
+                            <h6>
+                              Nova regulamentação trabalhista em análise
+                            </h6></a
                           >
-                          <p class="text-truncate">
-                            Today’s news headlines,Breaking...
-                          </p>
+                          <p class="text-truncate">Mendes & Costa Advogados</p>
                         </div>
-                        <span>5 hours</span>
+                        <span>10/07</span>
                       </li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-12 col-lg-8">
-                <div class="card height-equal">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Manage Invoice</h3>
-                  </div>
-                  <div class="card-body pt-0 manage-invoice filled-checkbox">
-                    <div class="table-responsive theme-scrollbar">
-                      <table
-                        class="table display table-bordernone mt-0"
-                        id="manage-invoice"
-                        style="width: 100%"
-                      >
-                        <thead>
-                          <tr>
-                            <th>
-                              <div
-                                class="form-check checkbox checkbox-solid-primary"
-                              >
-                                <input
-                                  class="form-check-input"
-                                  id="solid"
-                                  type="checkbox"
-                                />
-                                <label class="form-check-label" for="solid">
-                                </label>
-                              </div>
-                            </th>
-                            <th>Client</th>
-                            <th>Date</th>
-                            <th>Payment</th>
-                            <th>Id No</th>
-                            <th>Amount</th>
-                            <th class="text-center">Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <div
-                                class="form-check checkbox checkbox-solid-primary"
-                              >
-                                <input
-                                  class="form-check-input"
-                                  id="solid1"
-                                  type="checkbox"
-                                />
-                                <label class="form-check-label" for="solid1">
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <a href="list-products.html">
-                                <h6 class="f-w-600">Comelune</h6></a
-                              >
-                            </td>
-                            <td>
-                              <p class="f-w-600">27 Nov</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">Private</h6>
-                            </td>
-                            <td>
-                              <p class="f-w-600">9605</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">$2,500</h6>
-                            </td>
-                            <td class="text-end">
-                              <div
-                                class="btn bg-light-success border-light-success text-success"
-                              >
-                                Concluído
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div
-                                class="form-check checkbox checkbox-solid-primary"
-                              >
-                                <input
-                                  class="form-check-input"
-                                  id="solid2"
-                                  type="checkbox"
-                                  checked=""
-                                />
-                                <label class="form-check-label" for="solid2">
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <a href="list-products.html">
-                                <h6 class="f-w-600">Diagnos</h6></a
-                              >
-                            </td>
-                            <td>
-                              <p class="f-w-600">30 Nov</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">Bill Payment</h6>
-                            </td>
-                            <td>
-                              <p class="f-w-600">9548</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">$4,560</h6>
-                            </td>
-                            <td class="text-end">
-                              <div
-                                class="btn bg-light-success border-light-success text-success"
-                              >
-                                Concluído
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div
-                                class="form-check checkbox checkbox-solid-primary"
-                              >
-                                <input
-                                  class="form-check-input"
-                                  id="solid3"
-                                  type="checkbox"
-                                />
-                                <label class="form-check-label" for="solid3">
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <a href="list-products.html">
-                                <h6 class="f-w-600">Saturan</h6></a
-                              >
-                            </td>
-                            <td>
-                              <p class="f-w-600">27 Jun</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">Bill Payment</h6>
-                            </td>
-                            <td>
-                              <p class="f-w-600">2950</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">$4,876</h6>
-                            </td>
-                            <td class="text-end">
-                              <div
-                                class="btn bg-light-warning border-light-warning text-warning"
-                              >
-                                Pendente
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div
-                                class="form-check checkbox checkbox-solid-primary"
-                              >
-                                <input
-                                  class="form-check-input"
-                                  id="solid4"
-                                  type="checkbox"
-                                  checked=""
-                                />
-                                <label class="form-check-label" for="solid4">
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <a href="list-products.html">
-                                <h6 class="f-w-600">Williams</h6></a
-                              >
-                            </td>
-                            <td>
-                              <p class="f-w-600">16 Dec</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">Private</h6>
-                            </td>
-                            <td>
-                              <p class="f-w-600">1552</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">$3,876</h6>
-                            </td>
-                            <td class="text-end">
-                              <div
-                                class="btn bg-light-danger border-light-danger text-danger"
-                              >
-                                Cancelado
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div
-                                class="form-check checkbox checkbox-solid-primary"
-                              >
-                                <input
-                                  class="form-check-input"
-                                  id="solid5"
-                                  type="checkbox"
-                                  checked=""
-                                />
-                                <label class="form-check-label" for="solid5">
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <a href="list-products.html">
-                                <h6 class="f-w-600">Davies</h6></a
-                              >
-                            </td>
-                            <td>
-                              <p class="f-w-600">10 Nov</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">Bill Payment</h6>
-                            </td>
-                            <td>
-                              <p class="f-w-600">9567</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">$2,986</h6>
-                            </td>
-                            <td class="text-end">
-                              <div
-                                class="btn bg-light-success border-light-success text-success"
-                              >
-                                Concluído
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div
-                                class="form-check checkbox checkbox-solid-primary"
-                              >
-                                <input
-                                  class="form-check-input"
-                                  id="solid6"
-                                  type="checkbox"
-                                />
-                                <label class="form-check-label" for="solid6">
-                                </label>
-                              </div>
-                            </td>
-                            <td>
-                              <a href="list-products.html">
-                                <h6 class="f-w-600">Smith</h6></a
-                              >
-                            </td>
-                            <td>
-                              <p class="f-w-600">30 Nov</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">Private</h6>
-                            </td>
-                            <td>
-                              <p class="f-w-600">8992</p>
-                            </td>
-                            <td>
-                              <h6 class="f-w-600">$6,789</h6>
-                            </td>
-                            <td class="text-end">
-                              <div
-                                class="btn bg-light-success border-light-success text-success"
-                              >
-                                Concluído
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1794,11 +1544,11 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 footer-copyright">
-                <p class="mb-0">Copyright 2024 © Admiro theme by pixelstrap.</p>
+                <p class="mb-0">Todos os Direitos Reservados 2025 © EENU.</p>
               </div>
               <div class="col-md-6">
-                <p class="float-end mb-0">
-                  Hand crafted & made with
+                <p class="float-end mb-0" style="opacity: 0">
+                  Desenvolvido por
                   <svg class="svg-color footer-icon">
                     <use href="images/iconly-sprite.svg#heart"></use>
                   </svg>
@@ -1810,17 +1560,18 @@
       </div>
     </div>
     <!-- jquery
-<script src="js/popper.min.js" defer=""></script>
+
+-->
+    <script src="js/popper.min.js" defer=""></script>
     <script src="js/bootstrap.bundle.min.js" defer=""></script>
-        <script src="js/jquery.min.js"></script>
-            <script src="js/fontawesome-min.js"></script>
-                <script src="js/feather.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fontawesome-min.js"></script>
+    <script src="js/feather.min.js"></script>
     <script src="js/script.js"></script>
-        <script src="js/datatable.custom.js"></script>
+    <script src="js/datatable.custom.js"></script>
     <script src="js/datatable.custom1.js"></script>
     <script src="js/datatable.custom_1.js"></script>
-        <script src="js/jquery.dataTables.min.js"></script>
--->
+    <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/custom-script.js"></script>
     <script src="js/height-equal.js"></script>
     <script src="js/config.js"></script>
@@ -1834,7 +1585,6 @@
     <script src="js/tilt.jquery.js"></script>
     <script src="js/tilt-custom.js"></script>
     <script src="js/dashboard_1.js"></script>
-
     <script src="js/sidebar.js"></script>
   </body>
 </html>
