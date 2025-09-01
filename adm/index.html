@@ -34,23 +34,29 @@
   <body>
     <div class="tap-top"><i class="iconly-Arrow-Up icli"></i></div>
     <!-- tap on tap ends-->
-    <!-- loader
     <div class="loader-wrapper">
       <div class="loader">
         <span></span><span></span><span></span><span></span><span></span>
       </div>
     </div>
-    -->
+    <script>
+      const loader = document.querySelector(".loader-wrapper");
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 3000);
+    </script>
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <header class="page-header row">
         <div class="logo-wrapper d-flex align-items-center col-auto">
           <a href="index.html"
             ><img
               class="light-logo img-fluid"
-              src="images/logo1.png"
+              src="images/logo.webp"
+              style="max-width: 100px"
               alt="logo" /><img
               class="dark-logo img-fluid"
-              src="images/logo-dark.png"
+              src="images/logo-black.webp"
+              style="max-width: 100px"
               alt="logo" /></a
           ><a class="close-btn toggle-sidebar" href="javascript:void(0)">
             <svg class="svg-color">
@@ -485,7 +491,7 @@
                     <img src="images/profile.png" alt="user" />
                   </div>
                   <div class="user-content">
-                    <h6>Ava Davis</h6>
+                    <h6>Christian</h6>
                     <p class="mb-0">
                       Admin<i class="fa-solid fa-chevron-down"></i>
                     </p>
@@ -570,10 +576,12 @@
                   <i class="iconly-Arrow-Right-2 icli"> </i
                 ></a>
                 <ul class="sidebar-submenu">
-                  <li><a href="box-layout.html">Box Layout</a></li>
-                  <li><a href="layout-rtl.html">RTL</a></li>
+                  <li><a href="./financeiro/pendencias.html">Pendências</a></li>
                   <li>
                     <a href="./financeiro/gerar-boleto.html">Gerar Boleto</a>
+                  </li>
+                  <li>
+                    <a href="./financeiro/configuracoes.html">Configurações</a>
                   </li>
                 </ul>
               </li>
@@ -620,11 +628,20 @@
               </li>
               <li class="sidebar-list">
                 <i class="fa-solid fa-thumbtack"></i
-                ><a class="sidebar-link" href="letter-box.html">
+                ><a class="sidebar-link" href="./comunicados.html">
                   <svg class="stroke-icon">
                     <use href="images/iconly-sprite.svg#Message"></use>
                   </svg>
                   <h6 class="f-w-600">Comunicados</h6></a
+                >
+              </li>
+              <li class="sidebar-list">
+                <i class="fa-solid fa-thumbtack"></i
+                ><a class="sidebar-link" href="./atendimento.html">
+                  <svg class="stroke-icon">
+                    <use href="images/iconly-sprite.svg#Chat"></use>
+                  </svg>
+                  <h6 class="f-w-600">Atendimento</h6></a
                 >
               </li>
             </ul>
@@ -639,9 +656,9 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6 col-12">
-                  <h2>Default Dashboard</h2>
+                  <h2>Início</h2>
                   <p class="mb-0 text-title-gray">
-                    Welcome back! Let’s start from where you left.
+                    Informações Gerais da sua Empresa!
                   </p>
                 </div>
                 <div class="col-sm-6 col-12">
@@ -651,8 +668,8 @@
                         ><i class="iconly-Home icli svg-color"></i
                       ></a>
                     </li>
-                    <li class="breadcrumb-item">Dashboard</li>
-                    <li class="breadcrumb-item active">Default</li>
+                    <li class="breadcrumb-item">Prisma Studio</li>
+                    <li class="breadcrumb-item active">Admin</li>
                   </ol>
                 </div>
               </div>
@@ -661,7 +678,7 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid default-dashboard">
             <div class="row">
-              <div class="col-xl-4 proorder-xxl-1 col-sm-6 box-col-6">
+              <div class="col-12 col-md-12 col-lg-4">
                 <div class="card welcome-banner">
                   <div class="card-header p-0 card-no-border">
                     <div class="welcome-card">
@@ -695,12 +712,13 @@
                   <div class="card-body">
                     <div class="d-flex align-center">
                       <h1>
-                        Hello, Amirreza <img src="images/hand.png" alt="" />
+                        Studio Prisma <img src="images/hand.png" alt="" />
                       </h1>
                     </div>
-                    <p>Welcome back! Let’s start from where you left.</p>
+                    <p>Próxima reunião agendada para hoje!</p>
                     <div class="d-flex align-center justify-content-between">
-                      <a class="btn btn-pill btn-primary" href="">Whats New!</a
+                      <a class="btn btn-pill btn-primary" href=""
+                        >Ver Calendário!</a
                       ><span>
                         <svg class="stroke-icon">
                           <use href="images/icon-sprite.svg#watch"></use>
@@ -711,56 +729,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-3 col-xl-4 proorder-xxl-2 col-sm-6 box-col-6">
-                <div class="card earning-card">
-                  <div class="card-header pb-0 card-no-border">
-                    <div class="header-top">
-                      <h3>Earnings Trend</h3>
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle"
-                          id="userdropdown3"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Monthly
-                        </button>
-                        <div
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="userdropdown3"
-                        >
-                          <a class="dropdown-item" href="#">Weekly</a
-                          ><a class="dropdown-item" href="#">Monthly</a
-                          ><a class="dropdown-item" href="#">Yearly</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body pb-0">
-                    <div class="d-flex align-center gap-3">
-                      <h2>$4,875</h2>
-                      <span class="text-primary">
-                        36.28%
-                        <svg class="stroke-icon stroke-primary">
-                          <use
-                            href="images/icon-sprite.svg#arrow-down"
-                          ></use></svg
-                      ></span>
-                    </div>
-                    <div id="earnings-chart"></div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xxl-5 col-xl-6 proorder-xxl-7 col-lg-12 box-col-12"
-              >
+              <div class="col-12 col-md-12 col-lg-8">
                 <div class="card job-card">
                   <div class="card-header pb-0 card-no-border">
                     <div class="header-top">
-                      <h3>Job Today</h3>
+                      <h3>Todas as Reuniões</h3>
                       <div>
-                        <p>Wednesday 6, <span>Dec 2024</span></p>
+                        <p>Qua 6, <span>Out 2025</span></p>
                       </div>
                     </div>
                   </div>
@@ -776,8 +751,8 @@
                             </svg>
                           </div>
                           <div class="flex-grow-1">
-                            <h3>40</h3>
-                            <p>Total Jobs</p>
+                            <h3>3</h3>
+                            <p>Reuniões</p>
                           </div>
                         </div>
                       </li>
@@ -791,8 +766,8 @@
                             </svg>
                           </div>
                           <div class="flex-grow-1">
-                            <h3>30</h3>
-                            <p>Employees</p>
+                            <h3>2</h3>
+                            <p>Salas Reservadas</p>
                           </div>
                         </div>
                       </li>
@@ -806,8 +781,8 @@
                             </svg>
                           </div>
                           <div class="flex-grow-1">
-                            <h3>40</h3>
-                            <p>Hours of work</p>
+                            <h3>3</h3>
+                            <p>Horas de uso</p>
                           </div>
                         </div>
                       </li>
@@ -816,54 +791,54 @@
                       <table class="table display" style="width: 100%">
                         <thead>
                           <tr>
-                            <th>Time</th>
-                            <th>Job</th>
-                            <th>Company</th>
-                            <th class="text-center">Employee</th>
+                            <th>Horário</th>
+                            <th>Trabalho</th>
+                            <th>Sala</th>
+                            <th class="text-center">Responsável</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td>10:AM</td>
-                            <td>Maintenace</td>
-                            <td>Apple Inc.</td>
+                            <td>Manutenção</td>
+                            <td>Auditório</td>
                             <td>
                               <div class="d-flex align-items-center gap-2">
                                 <div class="flex-shrink-0">
                                   <img src="images/1.png" alt="" />
                                 </div>
                                 <div class="flex-grow-1">
-                                  <h6>Michele Ronaldo</h6>
+                                  <h6>Michele Farias</h6>
                                 </div>
                               </div>
                             </td>
                           </tr>
                           <tr>
                             <td>07:AM</td>
-                            <td>General</td>
-                            <td>Hewlett packard</td>
+                            <td>Segurança</td>
+                            <td>Sala 1</td>
                             <td>
                               <div class="d-flex align-items-center gap-2">
                                 <div class="flex-shrink-0">
                                   <img src="images/2_1.png" alt="" />
                                 </div>
                                 <div class="flex-grow-1">
-                                  <h6>Naomi watson</h6>
+                                  <h6>Reinaldo A.</h6>
                                 </div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td>03:AM</td>
-                            <td>Cleaning</td>
-                            <td>Microsoft</td>
+                            <td>13:AM</td>
+                            <td>Limpeza</td>
+                            <td>Sala 2</td>
                             <td>
                               <div class="d-flex align-items-center gap-2">
                                 <div class="flex-shrink-0">
                                   <img src="images/3_1.png" alt="" />
                                 </div>
                                 <div class="flex-grow-1">
-                                  <h6>Dann Petty</h6>
+                                  <h6>Vicenzo M.</h6>
                                 </div>
                               </div>
                             </td>
@@ -874,12 +849,10 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="col-xxl-6 col-xl-8 proorder-xxl-8 col-lg-12 col-md-6 box-col-7"
-              >
+              <div class="col-12 col-md-12 col-lg-8">
                 <div class="card">
                   <div class="card-header card-no-border pb-0">
-                    <h3>Transition History</h3>
+                    <h3>Histórico de Pagamentos</h3>
                   </div>
                   <div class="card-body transaction-history pt-0">
                     <div class="table-responsive theme-scrollbar">
@@ -890,10 +863,10 @@
                       >
                         <thead>
                           <tr>
-                            <th>Item Name</th>
-                            <th>Invoice No.</th>
-                            <th>Credit/Debit</th>
-                            <th>Date/Time</th>
+                            <th>Descrição</th>
+                            <th>Código</th>
+                            <th>Tipo</th>
+                            <th>Data/Hora</th>
                             <th class="text-center">Status</th>
                           </tr>
                         </thead>
@@ -902,23 +875,25 @@
                             <td>
                               <div class="d-flex align-items-center gap-3">
                                 <div class="flex-shrink-0">
-                                  <img src="images/1_1.png" alt="" />
+                                  <img
+                                    src="images/_3.png"
+                                    alt=""
+                                    style="width: 16px"
+                                  />
                                 </div>
                                 <div class="flex-grow-1">
-                                  <a href="product-page.html">
-                                    <h6>Samsung TV</h6></a
-                                  >
-                                  <p>Item Sold</p>
+                                  <a href="#"> <h6>Reembolso</h6></a>
+                                  <p>PIX</p>
                                 </div>
                               </div>
                             </td>
                             <td>#px0101</td>
-                            <td class="text-success">+ $3460</td>
+                            <td class="text-success">+ R$360</td>
                             <td>
                               <div class="d-flex">
                                 <div class="flex-grow-1">
-                                  <h6>Jan 25</h6>
-                                  <p>08:35:65</p>
+                                  <h6>25 Ago</h6>
+                                  <p>10:35:15</p>
                                 </div>
                               </div>
                             </td>
@@ -926,7 +901,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -934,23 +909,27 @@
                             <td>
                               <div class="d-flex align-items-center gap-3">
                                 <div class="flex-shrink-0">
-                                  <img src="images/2_2.png" alt="" />
+                                  <img
+                                    src="images/_2.png"
+                                    alt=""
+                                    style="width: 16px"
+                                  />
                                 </div>
                                 <div class="flex-grow-1">
                                   <a href="product-page.html">
-                                    <h6>Spring Bed</h6></a
+                                    <h6>Conta Energia</h6></a
                                   >
-                                  <p>Bought item</p>
+                                  <p>Boleto</p>
                                 </div>
                               </div>
                             </td>
                             <td>#rf304f</td>
-                            <td class="text-danger">- $910</td>
+                            <td class="text-danger">- R$410</td>
                             <td>
                               <div class="d-flex">
                                 <div class="flex-grow-1">
-                                  <h6>Feb 20</h6>
-                                  <p>12:35:00</p>
+                                  <h6>20 Ago</h6>
+                                  <p>12:31:03</p>
                                 </div>
                               </div>
                             </td>
@@ -958,7 +937,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -966,23 +945,27 @@
                             <td>
                               <div class="d-flex align-items-center gap-3">
                                 <div class="flex-shrink-0">
-                                  <img src="images/3.png" alt="" />
+                                  <img
+                                    src="images/_5.png"
+                                    alt=""
+                                    style="width: 16px"
+                                  />
                                 </div>
                                 <div class="flex-grow-1">
                                   <a href="product-page.html">
-                                    <h6>Long Dress</h6></a
+                                    <h6>Estacionamento</h6></a
                                   >
-                                  <p>Bought item</p>
+                                  <p>PIX</p>
                                 </div>
                               </div>
                             </td>
                             <td>#dnj480</td>
-                            <td class="text-success">+ $4380</td>
+                            <td class="text-alert">R$750</td>
                             <td>
                               <div class="d-flex">
                                 <div class="flex-grow-1">
-                                  <h6>Oct 25</h6>
-                                  <p>04:39:08</p>
+                                  <h6>14 Ago</h6>
+                                  <p>14:29:08</p>
                                 </div>
                               </div>
                             </td>
@@ -990,7 +973,7 @@
                               <div
                                 class="btn bg-light-warning border-light-warning text-warning"
                               >
-                                Pending
+                                Pendente
                               </div>
                             </td>
                           </tr>
@@ -998,23 +981,27 @@
                             <td>
                               <div class="d-flex align-items-center gap-3">
                                 <div class="flex-shrink-0">
-                                  <img src="images/4.png" alt="" />
+                                  <img
+                                    src="images/_1.png"
+                                    alt=""
+                                    style="width: 13px"
+                                  />
                                 </div>
                                 <div class="flex-grow-1">
                                   <a href="product-page.html">
-                                    <h6>Phillip Lightbulb</h6></a
+                                    <h6>Aluguel</h6></a
                                   >
-                                  <p>Item Sold</p>
+                                  <p>Boleto</p>
                                 </div>
                               </div>
                             </td>
                             <td>#g189d0</td>
-                            <td class="text-success">+ $246</td>
+                            <td class="text-danger">- R$2246</td>
                             <td>
                               <div class="d-flex">
                                 <div class="flex-grow-1">
-                                  <h6>Dec 25</h6>
-                                  <p>08:35:65</p>
+                                  <h6>12 Ago</h6>
+                                  <p>08:35:13</p>
                                 </div>
                               </div>
                             </td>
@@ -1022,7 +1009,7 @@
                               <div
                                 class="btn bg-light-danger border-light-danger text-danger"
                               >
-                                Canceled
+                                Cancelado
                               </div>
                             </td>
                           </tr>
@@ -1030,23 +1017,27 @@
                             <td>
                               <div class="d-flex align-items-center gap-3">
                                 <div class="flex-shrink-0">
-                                  <img src="images/5.png" alt="" />
+                                  <img
+                                    src="images/_4.png"
+                                    alt=""
+                                    style="width: 16px"
+                                  />
                                 </div>
                                 <div class="flex-grow-1">
                                   <a href="product-page.html">
-                                    <h6>Sofa Hauga</h6></a
+                                    <h6>Taxa Condomínio</h6></a
                                   >
-                                  <p>Item Sold</p>
+                                  <p>Boleto</p>
                                 </div>
                               </div>
                             </td>
                             <td>#31d8fs</td>
-                            <td class="text-danger">- $220</td>
+                            <td class="text-danger">- R$220</td>
                             <td>
                               <div class="d-flex">
                                 <div class="flex-grow-1">
-                                  <h6>Jan 25</h6>
-                                  <p>10:20:87</p>
+                                  <h6>09 Ago</h6>
+                                  <p>10:20:27</p>
                                 </div>
                               </div>
                             </td>
@@ -1054,7 +1045,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -1062,22 +1053,26 @@
                             <td>
                               <div class="d-flex align-items-center gap-3">
                                 <div class="flex-shrink-0">
-                                  <img src="images/6.png" alt="" />
+                                  <img
+                                    src="images/_1.png"
+                                    alt=""
+                                    style="width: 13px"
+                                  />
                                 </div>
                                 <div class="flex-grow-1">
                                   <a href="product-page.html">
-                                    <h6>Apple iMac 19”</h6></a
+                                    <h6>Multa Atraso</h6></a
                                   >
-                                  <p>Item Sold</p>
+                                  <p>PIX</p>
                                 </div>
                               </div>
                             </td>
                             <td>#g5384h</td>
-                            <td class="text-success">+ $983</td>
+                            <td class="text-red">- R$283</td>
                             <td>
                               <div class="d-flex">
                                 <div class="flex-grow-1">
-                                  <h6>Feb 05</h6>
+                                  <h6>30 Jul</h6>
                                   <p>10:49:50</p>
                                 </div>
                               </div>
@@ -1086,7 +1081,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -1096,11 +1091,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-3 col-xl-4 proorder-xxl-9 col-md-6 box-col-5">
+              <div class="col-12 col-md-12 col-lg-4">
                 <div class="card">
                   <div class="card-header card-no-border pb-0">
                     <div class="header-top">
-                      <h3>Audit log</h3>
+                      <h3>Auditoria</h3>
                       <div class="dropdown icon-dropdown">
                         <button
                           class="btn"
@@ -1130,11 +1125,11 @@
                         </div>
                         <div class="flex-grow-1">
                           <a href="product-page.html">
-                            <h6>Route P204_salesfores created</h6></a
+                            <h6>Reserva Auditório</h6></a
                           >
-                          <p>Andre Sluczka</p>
+                          <p>Alpha Tech</p>
                         </div>
-                        <span>2 hours</span>
+                        <span>17:45</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div class="flex-shrink-0 bg-warning">
@@ -1142,23 +1137,21 @@
                         </div>
                         <div class="flex-grow-1">
                           <a href="product-page.html">
-                            <h6>R304_salesforece undeployed</h6></a
+                            <h6>Reunião Planejamento</h6></a
                           >
-                          <p>Fabian Beliza</p>
+                          <p>Beta Solutions</p>
                         </div>
-                        <span>4 hours </span>
+                        <span>7 Out</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div class="flex-shrink-0 bg-danger">
                           <img src="images/cancel.png" alt="" />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html">
-                            <h6>R304_salesforece failed...</h6></a
-                          >
-                          <p>Michael Ganatra</p>
+                          <a href="product-page.html"> <h6>Assembleia</h6></a>
+                          <p>EENU</p>
                         </div>
-                        <span>10 Jun</span>
+                        <span>10 Out</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div class="flex-shrink-0 bg-success">
@@ -1166,11 +1159,11 @@
                         </div>
                         <div class="flex-grow-1">
                           <a href="product-page.html">
-                            <h6>New environment DEV created</h6></a
+                            <h6>Melhoria de Segurança</h6></a
                           >
-                          <p>Wade Warren</p>
+                          <p>Epsilon Ltda</p>
                         </div>
-                        <span>22 Jun </span>
+                        <span>22 Out</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div class="flex-shrink-0 bg-success">
@@ -1178,80 +1171,31 @@
                         </div>
                         <div class="flex-grow-1">
                           <a href="product-page.html">
-                            <h6>Project salesforce created</h6></a
+                            <h6>Cancelamento de Reserva G202</h6></a
                           >
-                          <p>Bessie Cooper</p>
+                          <p>Alpha Tech</p>
                         </div>
-                        <span>10 july </span>
+                        <span>2 Nov</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div class="flex-shrink-0 bg-warning">
                           <img src="images/danger.png" alt="" />
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html">
-                            <h6>G202_Salesforce undeployed</h6></a
-                          >
-                          <p>Andre Sluczka</p>
+                          <a href="product-page.html"> <h6>Assembleia</h6></a>
+                          <p>EENU</p>
                         </div>
-                        <span>22 Jun </span>
+                        <span>5 Nov </span>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-3 col-xl-4 proorder-xxl-3 col-md-6 box-col-6">
+              <div class="col-12 col-md-12 col-lg-4">
                 <div class="card">
                   <div class="card-header card-no-border pb-0">
                     <div class="header-top">
-                      <h3>Total Investment</h3>
-                      <div class="dropdown icon-dropdown">
-                        <button
-                          class="btn"
-                          id="userdropdown5"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="fa-solid fa-ellipsis"></i>
-                        </button>
-                        <div
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="userdropdown5"
-                        >
-                          <a class="dropdown-item" href="#">Weekly</a
-                          ><a class="dropdown-item" href="#">Monthly</a
-                          ><a class="dropdown-item" href="#">Yearly</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body investment-card">
-                    <div id="investment"></div>
-                    <ul class="d-flex align-center justify-content-center">
-                      <li class="text-center">
-                        <p class="mb-0">Total</p>
-                        <h6>$45,9760</h6>
-                      </li>
-                      <li class="text-center">
-                        <p class="mb-0">Monthly</p>
-                        <h6>$12,263</h6>
-                      </li>
-                      <li class="text-center">
-                        <p class="mb-0">Daily</p>
-                        <h6>$32600</h6>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xxl-3 col-xl-4 proorder-xxl-12 col-md-6 box-col-6"
-              >
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <div class="header-top">
-                      <h3>Latest Activity</h3>
+                      <h3>Últimas Atividades</h3>
                       <div class="dropdown icon-dropdown">
                         <button
                           class="btn"
@@ -1284,12 +1228,10 @@
                           </svg>
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html">
-                            <h6>Added new repository</h6></a
-                          >
-                          <p>Fabpot/symfony-docker</p>
+                          <a href="#"> <h6>Página Editada</h6></a>
+                          <p>Personalização</p>
                         </div>
-                        <span>2 hours</span>
+                        <span>02/10</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div
@@ -1300,12 +1242,10 @@
                           </svg>
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html">
-                            <h6>Added new work</h6></a
-                          >
-                          <p>Private Contributions</p>
+                          <a href="#"> <h6>Boleto Gerado</h6></a>
+                          <p>Financeiro</p>
                         </div>
-                        <span>4 hours</span>
+                        <span>01/10</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div
@@ -1318,10 +1258,10 @@
                           </svg>
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html"> <h6>Review</h6></a>
-                          <p>Reviewed repositories</p>
+                          <a href="#"> <h6>Pendência Concluída</h6></a>
+                          <p>Fatura</p>
                         </div>
-                        <span>10 Jun </span>
+                        <span>20/09</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div
@@ -1332,12 +1272,10 @@
                           </svg>
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html">
-                            <h6>Upload documents</h6></a
-                          >
-                          <p>Development Startup</p>
+                          <a href="#"> <h6>Documento Enviado</h6></a>
+                          <p>Documentos</p>
                         </div>
-                        <span>22 Jun </span>
+                        <span>05/09</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div
@@ -1348,10 +1286,12 @@
                           </svg>
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html"> <h6>Opened issue</h6></a>
-                          <p>Private Contributions</p>
+                          <a href="product-page.html">
+                            <h6>Sala Reservada</h6></a
+                          >
+                          <p>Reservas</p>
                         </div>
-                        <span>10 july </span>
+                        <span>04/09</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div
@@ -1363,11 +1303,11 @@
                         </div>
                         <div class="flex-grow-1">
                           <a href="product-page.html">
-                            <h6>Customer added by @jhon</h6></a
+                            <h6>Atendimento Registrado</h6></a
                           >
-                          <p>Fabpot/symfony-docker</p>
+                          <p>Atendimento</p>
                         </div>
-                        <span>26 Jun</span>
+                        <span>23/08</span>
                       </li>
                       <li class="d-flex align-items-center gap-2">
                         <div
@@ -1378,18 +1318,16 @@
                           </svg>
                         </div>
                         <div class="flex-grow-1">
-                          <a href="product-page.html">
-                            <h6>Added new work</h6></a
-                          >
-                          <p>Contributions repositories</p>
+                          <a href="product-page.html"> <h6>Reunião</h6></a>
+                          <p>Reuniões</p>
                         </div>
-                        <span>22 Jun</span>
+                        <span>21/08</span>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 proorder-xxl-6 box-col-12">
+              <div class="col-12 col-md-12 col-lg-4">
                 <div class="card growthcard">
                   <div class="card-header card-no-border pb-0">
                     <div class="header-top">
@@ -1440,209 +1378,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-3 col-xl-5 proorder-xxl-4 col-md-6 box-col-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <div class="header-top">
-                      <h3>Top Users</h3>
-                      <div class="dropdown icon-dropdown">
-                        <button
-                          class="btn"
-                          id="userdropdown7"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="fa-solid fa-ellipsis"></i>
-                        </button>
-                        <div
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="userdropdown7"
-                        >
-                          <a class="dropdown-item" href="#">Weekly</a
-                          ><a class="dropdown-item" href="#">Monthly</a
-                          ><a class="dropdown-item" href="#">Yearly</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body top-user pt-2">
-                    <ul>
-                      <li
-                        class="d-flex align-items-center justify-content-between gap-2"
-                      >
-                        <div class="d-flex gap-2">
-                          <div class="flex-shrink-0 comman-round">
-                            <img src="images/01.png" alt="" />
-                          </div>
-                          <div>
-                            <a href="#"> <h6>Alice Goodwin</h6></a>
-                            <p>
-                              <svg class="stroke-icon">
-                                <use
-                                  href="images/icon-sprite.svg#map-icon"
-                                ></use></svg
-                              >Texas
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="btn bg-light-success border-light-success text-success"
-                        >
-                          Completed</button
-                        ><span>$250.00</span>
-                      </li>
-                      <li
-                        class="d-flex align-items-center justify-content-between gap-2"
-                      >
-                        <div class="d-flex gap-2">
-                          <div class="flex-shrink-0 comman-round">
-                            <img src="images/02.png" alt="" />
-                          </div>
-                          <div>
-                            <a href="#"> <h6>Smith Lovell</h6></a>
-                            <p>
-                              <svg class="stroke-icon">
-                                <use
-                                  href="images/icon-sprite.svg#map-icon"
-                                ></use></svg
-                              >Texas
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="btn bg-light-success border-light-success text-success"
-                        >
-                          Completed</button
-                        ><span>$682.00</span>
-                      </li>
-                      <li
-                        class="d-flex align-items-center justify-content-between gap-2"
-                      >
-                        <div class="d-flex gap-2">
-                          <div class="flex-shrink-0 comman-round">
-                            <img src="images/03.png" alt="" />
-                          </div>
-                          <div>
-                            <a href="#"> <h6>Jones Brooks</h6></a>
-                            <p>
-                              <svg class="stroke-icon">
-                                <use
-                                  href="images/icon-sprite.svg#map-icon"
-                                ></use></svg
-                              >Texas
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="btn bg-light-warning border-light-warning text-warning"
-                        >
-                          Pending</button
-                        ><span>$387.00</span>
-                      </li>
-                      <li
-                        class="d-flex align-items-center justify-content-between gap-2"
-                      >
-                        <div class="d-flex gap-2">
-                          <div class="flex-shrink-0 comman-round">
-                            <img src="images/04.png" alt="" />
-                          </div>
-                          <div>
-                            <a href="#"> <h6>Brown Acum</h6></a>
-                            <p>
-                              <svg class="stroke-icon">
-                                <use
-                                  href="images/icon-sprite.svg#map-icon"
-                                ></use></svg
-                              >Texas
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="btn bg-light-danger border-light-danger text-danger"
-                        >
-                          Canceled</button
-                        ><span>$355.00</span>
-                      </li>
-                      <li
-                        class="d-flex align-items-center justify-content-between gap-2"
-                      >
-                        <div class="d-flex gap-2">
-                          <div class="flex-shrink-0 comman-round">
-                            <img src="images/05.png" alt="" />
-                          </div>
-                          <div>
-                            <a href="#"> <h6>Evans Mayo</h6></a>
-                            <p>
-                              <svg class="stroke-icon">
-                                <use
-                                  href="images/icon-sprite.svg#map-icon"
-                                ></use></svg
-                              >Texas
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="btn bg-light-success border-light-success text-success"
-                        >
-                          Completed</button
-                        ><span>$584.00</span>
-                      </li>
-                      <li
-                        class="d-flex align-items-center justify-content-between gap-2"
-                      >
-                        <div class="d-flex gap-2">
-                          <div class="flex-shrink-0 comman-round">
-                            <img src="images/06.png" alt="" />
-                          </div>
-                          <div>
-                            <a href="#"> <h6>Wilson Pipes</h6></a>
-                            <p>
-                              <svg class="stroke-icon">
-                                <use
-                                  href="images/icon-sprite.svg#map-icon"
-                                ></use></svg
-                              >Texas
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="btn bg-light-success border-light-success text-success"
-                        >
-                          Completed</button
-                        ><span>$954.00</span>
-                      </li>
-                      <li
-                        class="d-flex align-items-center justify-content-between gap-2"
-                      >
-                        <div class="d-flex gap-2">
-                          <div class="flex-shrink-0 comman-round">
-                            <img src="images/07.png" alt="" />
-                          </div>
-                          <div>
-                            <a href="#"> <h6>Alice Pindar</h6></a>
-                            <p>
-                              <svg class="stroke-icon">
-                                <use
-                                  href="images/icon-sprite.svg#map-icon"
-                                ></use></svg
-                              >Texas
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="btn bg-light-danger border-light-danger text-danger"
-                        >
-                          Canceled</button
-                        ><span>$756.00</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xxl-3 col-xl-4 proorder-xxl-10 col-md-6 box-col-6"
-              >
+              <div class="col-12 col-md-12 col-lg-4">
                 <div class="card height-equal">
                   <div class="card-header card-no-border pb-0">
                     <div class="header-top">
@@ -1772,57 +1508,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="col-xxl-3 col-xl-4 proorder-xxl-11 col-md-6 box-col-6"
-              >
-                <div class="card height-equal">
-                  <div class="card-header card-no-border pb-0">
-                    <div class="header-top">
-                      <h3>Total Invest</h3>
-                      <div class="dropdown icon-dropdown">
-                        <button
-                          class="btn"
-                          id="userdropdown1"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="fa-solid fa-ellipsis"></i>
-                        </button>
-                        <div
-                          class="dropdown-menu dropdown-menu-end"
-                          aria-labelledby="userdropdown1"
-                        >
-                          <a class="dropdown-item" href="#">Weekly</a
-                          ><a class="dropdown-item" href="#">Monthly</a
-                          ><a class="dropdown-item" href="#">Yearly</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body total-invest">
-                    <div class="row">
-                      <div class="col-6 col-md-12 income-chart">
-                        <div class="Incomechrt" id="Incomechrt"></div>
-                      </div>
-                      <div class="col-6 col-md-12 invest-content text-center">
-                        <svg class="stroke-icon">
-                          <use href="images/icon-sprite.svg#chart-invest"></use>
-                        </svg>
-                        <div class="btn btn-pill btn-primary">
-                          <span> </span>Live
-                        </div>
-                        <p class="mb-0 des-title">This Invest Cycle</p>
-                        <h3>7,48,000</h3>
-                        <p class="description-title">
-                          Current Balance this invest cycle
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-6 col-xl-7 proorder-xxl-5 col-md-6 box-col-6">
+              <div class="col-12 col-md-12 col-lg-8">
                 <div class="card height-equal">
                   <div class="card-header card-no-border pb-0">
                     <h3>Manage Invoice</h3>
@@ -1893,7 +1579,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -1933,7 +1619,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -1972,7 +1658,7 @@
                               <div
                                 class="btn bg-light-warning border-light-warning text-warning"
                               >
-                                Pending
+                                Pendente
                               </div>
                             </td>
                           </tr>
@@ -2012,7 +1698,7 @@
                               <div
                                 class="btn bg-light-danger border-light-danger text-danger"
                               >
-                                Canceled
+                                Cancelado
                               </div>
                             </td>
                           </tr>
@@ -2052,7 +1738,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -2091,7 +1777,7 @@
                               <div
                                 class="btn bg-light-success border-light-success text-success"
                               >
-                                Completed
+                                Concluído
                               </div>
                             </td>
                           </tr>
@@ -2124,48 +1810,31 @@
       </div>
     </div>
     <!-- jquery
-
 <script src="js/popper.min.js" defer=""></script>
     <script src="js/bootstrap.bundle.min.js" defer=""></script>
         <script src="js/jquery.min.js"></script>
+            <script src="js/fontawesome-min.js"></script>
+                <script src="js/feather.min.js"></script>
+    <script src="js/script.js"></script>
+        <script src="js/datatable.custom.js"></script>
+    <script src="js/datatable.custom1.js"></script>
+    <script src="js/datatable.custom_1.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
 -->
-
-    <script src="js/fontawesome-min.js"></script>
-    <!-- feather-->
-    <script src="js/feather.min.js"></script>
     <script src="js/custom-script.js"></script>
-    <!-- sidebar -->
-    <script src="js/sidebar.js"></script>
-    <!-- height_equal-->
     <script src="js/height-equal.js"></script>
-    <!-- config-->
     <script src="js/config.js"></script>
-    <!-- apex-->
     <script src="js/apex-chart.js"></script>
     <script src="js/stock-prices.js"></script>
-    <!-- scrollbar-->
     <script src="js/simplebar.js"></script>
     <script src="js/custom.js"></script>
-    <!-- slick-->
     <script src="js/slick.min.js"></script>
     <script src="js/slick.js"></script>
-    <!-- data_table-->
-    <script src="js/jquery.dataTables.min.js"></script>
-    <!-- page_datatable-->
-    <script src="js/datatable.custom.js"></script>
-    <!-- page_datatable1-->
-    <script src="js/datatable.custom1.js"></script>
-    <!-- page_datatable-->
-    <script src="js/datatable.custom_1.js"></script>
-    <!-- theme_customizer-->
     <script src="js/customizer.js"></script>
-    <!-- tilt-->
     <script src="js/tilt.jquery.js"></script>
-    <!-- page_tilt-->
     <script src="js/tilt-custom.js"></script>
-    <!-- dashboard_1-->
     <script src="js/dashboard_1.js"></script>
-    <!-- custom script -->
-    <script src="js/script.js"></script>
+
+    <script src="js/sidebar.js"></script>
   </body>
 </html>
